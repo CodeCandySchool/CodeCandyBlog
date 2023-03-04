@@ -3,7 +3,6 @@
 //  SheetSampleApp
 //
 //  Created by Kensuke Nakagawa on 2023/03/02.
-//
 // 複数のシートモーダル画面を出し分ける実装
 
 import SwiftUI
