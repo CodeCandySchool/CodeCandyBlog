@@ -3,11 +3,10 @@
 //  SheetSampleApp
 //
 //  Created by Kensuke Nakagawa on 2023/03/02.
-//
+// 多階層的なシートモーダル遷移の実装
 
 import SwiftUI
 
-// 多階層的なシートモーダル遷移の実装
 struct MultilevelSheetView: View {
     // 一つ目のシート画面表示を管理する状態変数
     @State var firstShowSheet: Bool = false
