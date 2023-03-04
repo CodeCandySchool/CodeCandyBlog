@@ -4,7 +4,7 @@
 //
 //  Created by Kensuke Nakagawa on 2023/03/02.
 //
-// 「数値が〜〜以上になったらシート画面を表示」という条件を用いた実装
+// 条件式の判定とsheetの表示管理を紐付けた実装
 
 import SwiftUI
 
