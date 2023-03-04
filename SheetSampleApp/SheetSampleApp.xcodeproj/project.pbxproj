@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		BE64907229B04ABE00B71238 /* SheetSampleAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE64907129B04ABE00B71238 /* SheetSampleAppApp.swift */; };
-		BE64907429B04ABE00B71238 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE64907329B04ABE00B71238 /* ContentView.swift */; };
+		BE64907429B04ABE00B71238 /* BasicSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE64907329B04ABE00B71238 /* BasicSheetView.swift */; };
 		BE64907629B04ABF00B71238 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE64907529B04ABF00B71238 /* Assets.xcassets */; };
 		BE64907929B04ABF00B71238 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE64907829B04ABF00B71238 /* Preview Assets.xcassets */; };
 		BE64908029B0674700B71238 /* MultipleSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE64907F29B0674700B71238 /* MultipleSheetView.swift */; };
@@ -19,7 +19,7 @@
 /* Begin PBXFileReference section */
 		BE64906E29B04ABE00B71238 /* SheetSampleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SheetSampleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE64907129B04ABE00B71238 /* SheetSampleAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheetSampleAppApp.swift; sourceTree = "<group>"; };
-		BE64907329B04ABE00B71238 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		BE64907329B04ABE00B71238 /* BasicSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicSheetView.swift; sourceTree = "<group>"; };
 		BE64907529B04ABF00B71238 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BE64907829B04ABF00B71238 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		BE64907F29B0674700B71238 /* MultipleSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipleSheetView.swift; sourceTree = "<group>"; };
@@ -58,7 +58,7 @@
 			isa = PBXGroup;
 			children = (
 				BE64907129B04ABE00B71238 /* SheetSampleAppApp.swift */,
-				BE64907329B04ABE00B71238 /* ContentView.swift */,
+				BE64907329B04ABE00B71238 /* BasicSheetView.swift */,
 				BE64907F29B0674700B71238 /* MultipleSheetView.swift */,
 				BE64908129B06D1A00B71238 /* MultilevelSheetView.swift */,
 				BE64908329B072E500B71238 /* CountShowSheetView.swift */,
@@ -146,7 +146,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BE64907429B04ABE00B71238 /* ContentView.swift in Sources */,
+				BE64907429B04ABE00B71238 /* BasicSheetView.swift in Sources */,
 				BE64908429B072E500B71238 /* CountShowSheetView.swift in Sources */,
 				BE64908029B0674700B71238 /* MultipleSheetView.swift in Sources */,
 				BE64907229B04ABE00B71238 /* SheetSampleAppApp.swift in Sources */,

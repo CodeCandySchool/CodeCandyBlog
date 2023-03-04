@@ -8,7 +8,7 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct BasicSheetView: View {
     
     // シート画面の表示を管理する状態変数
     @State var showSheet: Bool = false
@@ -30,8 +30,8 @@ struct ContentView: View {
     } // body
 } // View
 
-struct ContentView_Previews: PreviewProvider {
+struct BasicSheetView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        BasicSheetView()
     }
 }
