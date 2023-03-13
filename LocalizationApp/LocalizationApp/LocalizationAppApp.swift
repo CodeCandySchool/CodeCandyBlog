@@ -3,7 +3,7 @@
 //  LocalizationApp
 //
 //  Created by Kensuke Nakagawa on 2023/02/24.
-//
+//  SwiftUI対応のローカライズサンプルです。
 
 import SwiftUI
 
