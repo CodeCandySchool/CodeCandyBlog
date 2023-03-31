@@ -4,6 +4,7 @@
 //
 //  Created by Kensuke Nakagawa on 2023/03/30.
 //
+// 画面表示時に必要なデータを取得するコード例
 
 import SwiftUI
 
