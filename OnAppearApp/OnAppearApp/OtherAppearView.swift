@@ -4,6 +4,7 @@
 //
 //  Created by Kensuke Nakagawa on 2023/03/30.
 //
+// 様々なケースでのonAppear設定例
 
 import SwiftUI
 
