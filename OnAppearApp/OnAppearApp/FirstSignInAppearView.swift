@@ -4,6 +4,7 @@
 //
 //  Created by Kensuke Nakagawa on 2023/03/31.
 //
+// 条件によって画面表示時の振る舞いを管理するコード例
 
 import SwiftUI
 

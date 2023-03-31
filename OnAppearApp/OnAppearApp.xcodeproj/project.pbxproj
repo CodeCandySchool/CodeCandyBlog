@@ -68,8 +68,8 @@
 				BE2A5B3729D5604300249073 /* SheetAppearView.swift */,
 				BE2A5B3929D5610900249073 /* OtherAppearView.swift */,
 				BE2A5B3B29D56EC500249073 /* FetchDataAppearView.swift */,
-				BE2A5B3F29D57CF400249073 /* AnimationAppearView.swift */,
 				BE2B801829D664D80081439C /* FirstSignInAppearView.swift */,
+				BE2A5B3F29D57CF400249073 /* AnimationAppearView.swift */,
 				BE2A5B2C29D5546700249073 /* Assets.xcassets */,
 				BE2A5B2E29D5546700249073 /* Preview Content */,
 			);
