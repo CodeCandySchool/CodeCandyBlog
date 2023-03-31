@@ -4,6 +4,7 @@
 //
 //  Created by Kensuke Nakagawa on 2023/03/30.
 //
+// onAppearの最もシンプルな使用例です。
 
 import SwiftUI
 
