@@ -3,7 +3,6 @@
 //  GeometryReaderSample
 //
 //  Created by Kensuke Nakagawa on 2023/05/22.
-//
 // 左上端に配置されたGeometryReaderの子ビューを中央に持ってくるパターン例
 
 import SwiftUI
