@@ -3,7 +3,6 @@
 //  GeometryReaderSample
 //
 //  Created by Kensuke Nakagawa on 2023/04/11.
-//
 // GeometryReaderの最も基本的な記述法
 
 import SwiftUI
