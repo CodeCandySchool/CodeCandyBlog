@@ -3,7 +3,6 @@
 //  GeometryReaderSample
 //
 //  Created by Kensuke Nakagawa on 2023/05/22.
-//
 // カスタムパーツ側にGeometryReaderが定義されている場合の例
 
 import SwiftUI
