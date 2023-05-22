@@ -3,7 +3,6 @@
 //  GeometryReaderSample
 //
 //  Created by Kensuke Nakagawa on 2023/04/13.
-//
 // GeometryReaderは自身の親ビューの情報を取得する
 
 import SwiftUI
