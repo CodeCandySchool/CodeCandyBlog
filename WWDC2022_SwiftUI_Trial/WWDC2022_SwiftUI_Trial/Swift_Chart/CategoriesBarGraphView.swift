@@ -4,6 +4,7 @@
 //
 //  Created by Kensuke Nakagawa on 2023/05/30.
 //
+// Chartのカテゴリが付与された棒グラフ
 
 import SwiftUI
 import Charts
