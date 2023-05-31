@@ -4,6 +4,7 @@
 //
 //  Created by Kensuke Nakagawa on 2023/05/31.
 //
+// X・Y軸ガイドの細かなカスタマイズ
 
 import SwiftUI
 import Charts
