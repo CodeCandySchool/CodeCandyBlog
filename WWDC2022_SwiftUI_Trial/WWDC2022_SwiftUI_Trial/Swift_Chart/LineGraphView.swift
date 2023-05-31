@@ -4,6 +4,8 @@
 //
 //  Created by Kensuke Nakagawa on 2023/05/25.
 //
+// Chartのラインチャート(折れ線グラフ)
+
 import SwiftUI
 import Charts
 
