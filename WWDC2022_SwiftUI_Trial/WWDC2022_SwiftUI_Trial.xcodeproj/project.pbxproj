@@ -7,22 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BE07F12C2A245EA2007ED1C4 /* ChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE07F12B2A245EA2007ED1C4 /* ChartView.swift */; };
+		BE07F12E2A25C509007ED1C4 /* CombinationChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE07F12D2A25C509007ED1C4 /* CombinationChartView.swift */; };
+		BE07F1302A25E576007ED1C4 /* CategoriesBarGraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE07F12F2A25E576007ED1C4 /* CategoriesBarGraphView.swift */; };
+		BE07F1342A26A650007ED1C4 /* CustomizeChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE07F1332A26A650007ED1C4 /* CustomizeChartView.swift */; };
 		BE599F7B2A1F197D00821E01 /* WWDC2022_SwiftUI_TrialApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE599F7A2A1F197D00821E01 /* WWDC2022_SwiftUI_TrialApp.swift */; };
 		BE599F7D2A1F197D00821E01 /* BarGraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE599F7C2A1F197D00821E01 /* BarGraphView.swift */; };
 		BE599F7F2A1F197F00821E01 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE599F7E2A1F197F00821E01 /* Assets.xcassets */; };
 		BE599F822A1F197F00821E01 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE599F812A1F197F00821E01 /* Preview Assets.xcassets */; };
-		BE599F8B2A1F2A6100821E01 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE599F8A2A1F2A6100821E01 /* Model.swift */; };
 		BE599F8D2A1F2AD900821E01 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE599F8C2A1F2AD900821E01 /* ContentView.swift */; };
 		BE599F8F2A1F312900821E01 /* LineGraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE599F8E2A1F312900821E01 /* LineGraphView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BE07F12B2A245EA2007ED1C4 /* ChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartView.swift; sourceTree = "<group>"; };
+		BE07F12D2A25C509007ED1C4 /* CombinationChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombinationChartView.swift; sourceTree = "<group>"; };
+		BE07F12F2A25E576007ED1C4 /* CategoriesBarGraphView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesBarGraphView.swift; sourceTree = "<group>"; };
+		BE07F1332A26A650007ED1C4 /* CustomizeChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomizeChartView.swift; sourceTree = "<group>"; };
 		BE599F772A1F197D00821E01 /* WWDC2022_SwiftUI_Trial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WWDC2022_SwiftUI_Trial.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE599F7A2A1F197D00821E01 /* WWDC2022_SwiftUI_TrialApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WWDC2022_SwiftUI_TrialApp.swift; sourceTree = "<group>"; };
 		BE599F7C2A1F197D00821E01 /* BarGraphView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarGraphView.swift; sourceTree = "<group>"; };
 		BE599F7E2A1F197F00821E01 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BE599F812A1F197F00821E01 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		BE599F8A2A1F2A6100821E01 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		BE599F8C2A1F2AD900821E01 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		BE599F8E2A1F312900821E01 /* LineGraphView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineGraphView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -77,19 +83,14 @@
 		BE599F882A1F29D600821E01 /* Swift_Chart */ = {
 			isa = PBXGroup;
 			children = (
+				BE07F12B2A245EA2007ED1C4 /* ChartView.swift */,
 				BE599F7C2A1F197D00821E01 /* BarGraphView.swift */,
+				BE07F12F2A25E576007ED1C4 /* CategoriesBarGraphView.swift */,
 				BE599F8E2A1F312900821E01 /* LineGraphView.swift */,
-				BE599F892A1F2A4A00821E01 /* Model */,
+				BE07F12D2A25C509007ED1C4 /* CombinationChartView.swift */,
+				BE07F1332A26A650007ED1C4 /* CustomizeChartView.swift */,
 			);
 			path = Swift_Chart;
-			sourceTree = "<group>";
-		};
-		BE599F892A1F2A4A00821E01 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				BE599F8A2A1F2A6100821E01 /* Model.swift */,
-			);
-			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -162,11 +163,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BE599F8B2A1F2A6100821E01 /* Model.swift in Sources */,
 				BE599F8F2A1F312900821E01 /* LineGraphView.swift in Sources */,
 				BE599F7D2A1F197D00821E01 /* BarGraphView.swift in Sources */,
 				BE599F8D2A1F2AD900821E01 /* ContentView.swift in Sources */,
+				BE07F1342A26A650007ED1C4 /* CustomizeChartView.swift in Sources */,
+				BE07F1302A25E576007ED1C4 /* CategoriesBarGraphView.swift in Sources */,
 				BE599F7B2A1F197D00821E01 /* WWDC2022_SwiftUI_TrialApp.swift in Sources */,
+				BE07F12C2A245EA2007ED1C4 /* ChartView.swift in Sources */,
+				BE07F12E2A25C509007ED1C4 /* CombinationChartView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

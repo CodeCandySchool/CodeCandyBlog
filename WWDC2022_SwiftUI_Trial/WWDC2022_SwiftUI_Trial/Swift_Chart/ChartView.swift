@@ -6,10 +6,53 @@
 //
 
 import SwiftUI
+import Charts
 
 struct ChartView: View {
+
+    /// Chartに用いるデータ群
+    let data_test: [BarData] = [
+        .init(name: "Akiko", value: 90, color: .green),
+        .init(name: "Jun"  , value: 65, color: .red),
+        .init(name: "Kenta", value: 80, color: .orange)
+    ]
+
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+
+        /// ✅要素分のMarkを定義するパターン
+        Chart {
+            BarMark(
+                x: .value("Name", data_test[0].name),
+                y: .value("Value", data_test[0].value)
+            )
+            BarMark(
+                x: .value("Name", data_test[1].name),
+                y: .value("Value", data_test[1].value)
+            )
+            BarMark(
+                x: .value("Name", data_test[2].name),
+                y: .value("Value", data_test[2].value)
+            )
+        }
+
+        /// ✅Chart内にForEachを定義するパターン
+        Chart {
+            ForEach(data_test) { dataRow in
+                BarMark(
+                    x: .value("Name", dataRow.name),
+                    y: .value("Value", dataRow.value)
+                )
+            }
+        }
+
+        /// ✅Chart自身にデータ群を渡すパターン
+        Chart(data_test) { dataRow in
+            BarMark(
+                x: .value("Name", dataRow.name),
+                y: .value("Value", dataRow.value)
+            )
+        }
+
     }
 }
 

@@ -9,31 +9,50 @@ import Charts
 
 struct LineGraphView: View {
 
-    let data_test1: [Data] = [
-        .init(name: "2021", value: 1000, color: .green),
-        .init(name: "2022", value: 2000, color: .green),
-        .init(name: "2023", value: 1500, color: .green)
+    static let lineData_test1: [LineData] = [
+        .init(week: "月曜日", sales: 2000),
+        .init(week: "火曜日", sales: 3000),
+        .init(week: "水曜日", sales: 4500),
     ]
 
-    let data_test2: [Data] = [
-        .init(name: "2021", value: 1500, color: .blue),
-        .init(name: "2022", value: 2500, color: .blue),
-        .init(name: "2023", value: 1400, color: .blue)
+    static let lineData_test2: [LineData] = [
+        .init(week: "月曜日", sales: 4500),
+        .init(week: "火曜日", sales: 1500),
+        .init(week: "水曜日", sales: 7000),
+    ]
+
+    /// ✅複数のデータをまとめて、カテゴリをつけておく
+    let lineData_categories = [
+        (category: "ハンバーグ", data: lineData_test1),
+        (category: "ラーメン", data: lineData_test2)
     ]
 
     var body: some View {
 
-        Chart() {
 
-            ForEach(data_test1) { dataRow in
-                LineMark(
-                    x: .value("Name", dataRow.name),
-                    y: .value("Value", dataRow.value)
-                )
-                .foregroundStyle(by: .value("Name", dataRow.name))
+        Chart {
+
+            ForEach(lineData_categories, id: \.category) { category in
+                ForEach(category.data, id: \.week) {
+                    LineMark(
+                        x: .value("Week", $0.week),
+                        y: .value("Sales", $0.sales)
+                    )
+                    .annotation(position: .top) {
+                        Image(systemName: "star")
+                    }
+                }
+                .foregroundStyle(by: .value("Category", category.category))
             }
         }
         .frame(height: 300)
-        .padding()
     }
 }
+
+// データモデル(Identifiableに準拠していること)
+struct LineData: Identifiable {
+    var id: String = UUID().uuidString
+    var week: String
+    var sales: Int
+}
+
