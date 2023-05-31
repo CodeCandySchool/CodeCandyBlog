@@ -4,6 +4,7 @@
 //
 //  Created by Kensuke Nakagawa on 2023/05/30.
 //
+// Chartの複数個のラインチャート実装
 
 import SwiftUI
 import Charts
