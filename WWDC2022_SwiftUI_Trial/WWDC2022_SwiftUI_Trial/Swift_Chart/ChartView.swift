@@ -4,6 +4,7 @@
 //
 //  Created by Kensuke Nakagawa on 2023/05/29.
 //
+// Chartの基本的な記述方法
 
 import SwiftUI
 import Charts
