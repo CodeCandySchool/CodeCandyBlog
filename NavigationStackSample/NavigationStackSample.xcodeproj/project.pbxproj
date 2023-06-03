@@ -12,8 +12,9 @@
 		BE07F1462A26FC56007ED1C4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE07F1452A26FC56007ED1C4 /* Assets.xcassets */; };
 		BE07F1492A26FC56007ED1C4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE07F1482A26FC56007ED1C4 /* Preview Assets.xcassets */; };
 		BE07F1982A282503007ED1C4 /* BasicNavigatitonStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE07F1972A282503007ED1C4 /* BasicNavigatitonStackView.swift */; };
-		BEB6699D2A29A787008FC9DE /* EnumSwithingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEB6699C2A29A787008FC9DE /* EnumSwithingView.swift */; };
-		BEB6699F2A29CA8C008FC9DE /* AccumulatedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEB6699E2A29CA8C008FC9DE /* AccumulatedView.swift */; };
+		BEB6699D2A29A787008FC9DE /* EnumSwithingNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEB6699C2A29A787008FC9DE /* EnumSwithingNavigationView.swift */; };
+		BEB6699F2A29CA8C008FC9DE /* DrillDownNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEB6699E2A29CA8C008FC9DE /* DrillDownNavigationView.swift */; };
+		BEB669A52A2C07D1008FC9DE /* NavigationDestinationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEB669A42A2C07D1008FC9DE /* NavigationDestinationView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,8 +24,9 @@
 		BE07F1452A26FC56007ED1C4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BE07F1482A26FC56007ED1C4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		BE07F1972A282503007ED1C4 /* BasicNavigatitonStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicNavigatitonStackView.swift; sourceTree = "<group>"; };
-		BEB6699C2A29A787008FC9DE /* EnumSwithingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnumSwithingView.swift; sourceTree = "<group>"; };
-		BEB6699E2A29CA8C008FC9DE /* AccumulatedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccumulatedView.swift; sourceTree = "<group>"; };
+		BEB6699C2A29A787008FC9DE /* EnumSwithingNavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnumSwithingNavigationView.swift; sourceTree = "<group>"; };
+		BEB6699E2A29CA8C008FC9DE /* DrillDownNavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrillDownNavigationView.swift; sourceTree = "<group>"; };
+		BEB669A42A2C07D1008FC9DE /* NavigationDestinationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationDestinationView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,8 +62,9 @@
 				BE07F1412A26FC55007ED1C4 /* NavigationStackSampleApp.swift */,
 				BE07F1432A26FC55007ED1C4 /* ContentView.swift */,
 				BE07F1972A282503007ED1C4 /* BasicNavigatitonStackView.swift */,
-				BEB6699C2A29A787008FC9DE /* EnumSwithingView.swift */,
-				BEB6699E2A29CA8C008FC9DE /* AccumulatedView.swift */,
+				BEB669A42A2C07D1008FC9DE /* NavigationDestinationView.swift */,
+				BEB6699C2A29A787008FC9DE /* EnumSwithingNavigationView.swift */,
+				BEB6699E2A29CA8C008FC9DE /* DrillDownNavigationView.swift */,
 				BE07F1452A26FC56007ED1C4 /* Assets.xcassets */,
 				BE07F1472A26FC56007ED1C4 /* Preview Content */,
 			);
@@ -146,11 +149,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BEB6699F2A29CA8C008FC9DE /* AccumulatedView.swift in Sources */,
+				BEB6699F2A29CA8C008FC9DE /* DrillDownNavigationView.swift in Sources */,
 				BE07F1982A282503007ED1C4 /* BasicNavigatitonStackView.swift in Sources */,
 				BE07F1442A26FC55007ED1C4 /* ContentView.swift in Sources */,
-				BEB6699D2A29A787008FC9DE /* EnumSwithingView.swift in Sources */,
+				BEB6699D2A29A787008FC9DE /* EnumSwithingNavigationView.swift in Sources */,
 				BE07F1422A26FC55007ED1C4 /* NavigationStackSampleApp.swift in Sources */,
+				BEB669A52A2C07D1008FC9DE /* NavigationDestinationView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
