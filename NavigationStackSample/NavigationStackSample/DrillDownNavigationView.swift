@@ -4,6 +4,7 @@
 //
 //  Created by Kensuke Nakagawa on 2023/06/02.
 //
+// NavigationStackにおけるドリルダウン方式の遷移実装
 
 import SwiftUI
 
@@ -12,7 +13,7 @@ enum SamplePath {
     case pathA, pathB, pathC, pathD
 }
 
-struct AccumulatedView: View {
+struct DrillDownNavigationView: View {
 
     @State private var navigatePath: [SamplePath] = []
 
@@ -29,9 +30,10 @@ struct AccumulatedView: View {
             }
             .navigationTitle("ホーム画面")
 
-            // enumのケースを用いて遷移先のビューを分岐
+            // 受け取ったenumのケースを用いて遷移先のビューを分岐
             .navigationDestination(for: SamplePath.self) { value in
 
+                // 遷移先で配列パスを操作する場合は参照を渡す
                 switch value {
 
                 case .pathA:
@@ -117,6 +119,6 @@ struct PathDView: View {
 
 struct AccumulatedView_Previews: PreviewProvider {
     static var previews: some View {
-        AccumulatedView()
+        DrillDownNavigationView()
     }
 }
