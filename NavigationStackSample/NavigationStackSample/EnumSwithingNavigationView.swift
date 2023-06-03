@@ -4,10 +4,11 @@
 //
 //  Created by Kensuke Nakagawa on 2023/06/02.
 //
+// enum + switch文を用いた遷移先ビューの出し分け
 
 import SwiftUI
 
-struct EnumSwithingView: View {
+struct EnumSwithingNavigationView: View {
 
     enum SamplePath {
         case first, second, third
@@ -73,9 +74,6 @@ struct ThirdView: View {
 
 struct EnumSwithingView_Previews: PreviewProvider {
     static var previews: some View {
-        EnumSwithingView()
+        EnumSwithingNavigationView()
     }
 }
-
-
-
