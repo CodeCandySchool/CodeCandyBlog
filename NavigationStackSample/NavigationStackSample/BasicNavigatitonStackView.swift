@@ -4,9 +4,12 @@
 //
 //  Created by Kensuke Nakagawa on 2023/06/01.
 //
+// NavigationStackによる従来のナビゲーション管理
+
 
 import SwiftUI
 
+// NavigationLinkを用いたナビゲーション管理
 struct BasicNavigatitonStackView: View {
 
     var body: some View {
@@ -28,31 +31,7 @@ struct BasicNavigatitonStackView: View {
         }
     }
 }
-
-struct NavigationDestinationView: View {
-    var body: some View {
-
-        NavigationStack {
-
-            // NavigationLinkに値のフラグを持たせる方法
-            List {
-                NavigationLink("レッドを渡して遷移", value: Color.red)
-                NavigationLink("イエローを渡して遷移", value: Color.yellow)
-                NavigationLink("グリーンを渡して遷移", value: Color.green)
-            }
-            /// 値のフラグを受け取ってナビゲーション遷移を発火することができる
-            /// 引数「for:」には、受け取る値のデータ型を指定
-            .navigationDestination(for: Color.self) { value in
-
-                // 受け取ったフラグは遷移先に渡すことができる
-                value
-                    .ignoresSafeArea()
-            }
-            .navigationTitle("ホーム画面")
-        }
-    }
-}
-
+// NavigationStackにおける親子ビューの関係
 struct ParentView: View {
 
     var body: some View {
@@ -69,6 +48,7 @@ struct ParentView: View {
     }
 }
 
+// 子ビューに定義は必要ない
 struct ChildView: View {
 
     let value: String
