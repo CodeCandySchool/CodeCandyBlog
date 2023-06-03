@@ -35,7 +35,7 @@ struct CustomizeChartView: View {
             }
         }
         .chartYAxis {
-            AxisMarks(preset: .extended, position: .leading)
+            AxisMarks()
         }
         .chartXAxis {
             AxisMarks(values: .stride(by: .month)) { value in
