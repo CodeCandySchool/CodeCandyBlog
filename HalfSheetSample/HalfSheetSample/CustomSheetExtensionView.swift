@@ -7,9 +7,32 @@
 
 import SwiftUI
 
+// シート幅のカスタム指定をextensionで管理
+extension PresentationDetent {
+    static let small = Self.height(100)
+    static let big = Self.fraction(0.75)
+}
+
 struct CustomSheetExtensionView: View {
+
+    @State private var isShowSheet = false
+
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+
+        Button("シートを表示") {
+            isShowSheet.toggle()
+        }
+        .sheet(isPresented: $isShowSheet) {
+
+            HalfSheetDetails(show: $isShowSheet)
+                // ✅管理したカスタム指定が使える
+                .presentationDetents([
+                    .small,
+                    .medium,
+                    .big,
+                    .large
+                ])
+        }
     }
 }
 
