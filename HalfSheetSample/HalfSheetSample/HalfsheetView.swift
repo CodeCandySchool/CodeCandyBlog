@@ -8,8 +8,38 @@
 import SwiftUI
 
 struct HalfsheetView: View {
+
+    @State private var isShowSheet = false
+
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+
+        Button("シートを表示") {
+            isShowSheet.toggle()
+        }
+        .sheet(isPresented: $isShowSheet) {
+
+            HalfSheetDetails(show: $isShowSheet)
+                .presentationDetents([
+                    .medium,
+                    .large,
+                    .height(200),
+                    .fraction(0.8)
+                ])
+        }
+    }
+}
+
+struct HalfSheetDetails: View {
+
+    @Binding var show: Bool
+
+    var body: some View {
+        VStack(spacing: 30) {
+            Text("ハーフシート画面").font(.largeTitle)
+            Button("シートを閉じる") {
+                show.toggle()
+            }
+        }
     }
 }
 
