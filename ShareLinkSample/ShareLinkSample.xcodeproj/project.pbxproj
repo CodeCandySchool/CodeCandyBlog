@@ -7,18 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BE30B5C22A3058710034755B /* CustomDataShareLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE30B5C12A3058710034755B /* CustomDataShareLink.swift */; };
+		BE30B5C42A3074D20034755B /* CustomShareSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE30B5C32A3074D20034755B /* CustomShareSheet.swift */; };
 		BEB669D92A2D554F008FC9DE /* ShareLinkSampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEB669D82A2D554F008FC9DE /* ShareLinkSampleApp.swift */; };
 		BEB669DB2A2D554F008FC9DE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEB669DA2A2D554F008FC9DE /* ContentView.swift */; };
 		BEB669DD2A2D5551008FC9DE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BEB669DC2A2D5551008FC9DE /* Assets.xcassets */; };
 		BEB669E02A2D5551008FC9DE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BEB669DF2A2D5551008FC9DE /* Preview Assets.xcassets */; };
+		BEB669E72A2D5563008FC9DE /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEB669E62A2D5563008FC9DE /* Home.swift */; };
+		BEB669EA2A2D55BC008FC9DE /* BasicShareLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEB669E92A2D55BC008FC9DE /* BasicShareLink.swift */; };
+		BEB669EC2A2D5C71008FC9DE /* CustomLabelShareLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEB669EB2A2D5C71008FC9DE /* CustomLabelShareLink.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BE30B5C12A3058710034755B /* CustomDataShareLink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomDataShareLink.swift; sourceTree = "<group>"; };
+		BE30B5C32A3074D20034755B /* CustomShareSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomShareSheet.swift; sourceTree = "<group>"; };
 		BEB669D52A2D554F008FC9DE /* ShareLinkSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShareLinkSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BEB669D82A2D554F008FC9DE /* ShareLinkSampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareLinkSampleApp.swift; sourceTree = "<group>"; };
 		BEB669DA2A2D554F008FC9DE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		BEB669DC2A2D5551008FC9DE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BEB669DF2A2D5551008FC9DE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		BEB669E62A2D5563008FC9DE /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		BEB669E92A2D55BC008FC9DE /* BasicShareLink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicShareLink.swift; sourceTree = "<group>"; };
+		BEB669EB2A2D5C71008FC9DE /* CustomLabelShareLink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLabelShareLink.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +63,7 @@
 			children = (
 				BEB669D82A2D554F008FC9DE /* ShareLinkSampleApp.swift */,
 				BEB669DA2A2D554F008FC9DE /* ContentView.swift */,
+				BEB669E82A2D556C008FC9DE /* Views */,
 				BEB669DC2A2D5551008FC9DE /* Assets.xcassets */,
 				BEB669DE2A2D5551008FC9DE /* Preview Content */,
 			);
@@ -65,6 +76,18 @@
 				BEB669DF2A2D5551008FC9DE /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		BEB669E82A2D556C008FC9DE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				BEB669E62A2D5563008FC9DE /* Home.swift */,
+				BEB669E92A2D55BC008FC9DE /* BasicShareLink.swift */,
+				BEB669EB2A2D5C71008FC9DE /* CustomLabelShareLink.swift */,
+				BE30B5C32A3074D20034755B /* CustomShareSheet.swift */,
+				BE30B5C12A3058710034755B /* CustomDataShareLink.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,6 +161,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				BEB669DB2A2D554F008FC9DE /* ContentView.swift in Sources */,
+				BEB669E72A2D5563008FC9DE /* Home.swift in Sources */,
+				BE30B5C42A3074D20034755B /* CustomShareSheet.swift in Sources */,
+				BE30B5C22A3058710034755B /* CustomDataShareLink.swift in Sources */,
+				BEB669EA2A2D55BC008FC9DE /* BasicShareLink.swift in Sources */,
+				BEB669EC2A2D5C71008FC9DE /* CustomLabelShareLink.swift in Sources */,
 				BEB669D92A2D554F008FC9DE /* ShareLinkSampleApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
