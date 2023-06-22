@@ -1,0 +1,20 @@
+//
+//  ContentView.swift
+//  AsyncImageSample
+//
+//  Created by Kensuke Nakagawa on 2023/06/20.
+//
+
+import SwiftUI
+
+// AsyncImageを呼び出す親ビュー
+struct ContentView: View {
+
+    var body: some View {
+
+        BasicAsyncImage(urlString: urlStringSample)
+    }
+}
+
+let urlStringSample: String = "https://lh3.googleusercontent.com/pw/AJFCJaU7Br49ZsUIM6gnFlnl4XUGeQVEeYHujv5jJJf24gExdZJkJcc2ete9pK5nU3UMZIRGTy-fdEcCkT_eKrnFessot9ofenpQOHIeSo3HNOrM5IKk27z4OUBG0v1j7AK0CNDS0QKGbkIsQxVIHZ25iBRyrvU9ZaZHSEUOQDJ3yQ-izC-Li_uywR94cQLYyVx2_8tAcWlMvL6TnRMbJZeAuklnmJUcrRDUf8Fcm9AlNLy8rH6_iDTeOa3AKuH3xFKDwoK7l395i5jv1abIp1RA_Wb4Ek1NgEYpY6PRJ00wrCZJ4P1tft2aEUHsblYcixzvjuXnT_7_RWqVjuYG8MHPiiCakl15uLSdHslECbj9yYU4LNSyI-Y822I6CB0chmyCQUWSjMrJplRuIKlrK0oNYO40y98kT67r7qvigwZ822yOHA1vf4KViq4lkzyjSsGTcxIiYSOQKNZXF0-9QmfDehMcukMF-8NWAuXFsbEDch6MPAXlQYgx4ZzQDz4vEs_BaHef5imc78VUAofpxohijyF5ldY3adi9AqSXn9giCgXqTBPj2FEa7NLGegmQI0w3rjf5rI_fCEmkNW3Zp1XFU3BZ32andjK3yu1Y7-AUFl5X6RMcKTlbW1jP1umgwBg33a1QpGNRNThjbnUtSoDgI0CVHNtyv9x4y9I9dPoqQtACDhWRBsIPNIgzwcbAtuK0TIB4rtoolSqKIraVG9dkHY6jowgkytLB33MphGKtHgwHYq4_yU4ZO9aHK3CKgUKvLNns_-malqyxncyIcgTC0jNAh77lcOjZwhctz_GoucU-vUy8ZfPB2o9oqOewFGRSLuu7A-SuDqdSFvsK5k5qa562vZD0mh-34XpBhICr6t5it0tPh8JWjji0G2_d-QpSJRSfAWkLeIj6phArwtU3HC6lF2JUa9fx4RrcqfDOVRGE_NU-1V9xTUwfzUzgDw=w2328-h1552-s-no?authuser=0"
+
