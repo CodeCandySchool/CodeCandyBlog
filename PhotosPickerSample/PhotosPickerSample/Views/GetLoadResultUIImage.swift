@@ -6,10 +6,32 @@
 //
 
 import SwiftUI
+import PhotosUI
 
 struct GetLoadResultUIImage: View {
+    /// フォトピッカー内で選択したアイテムが保持されるプロパティ
+    @State var selectedItem: PhotosPickerItem?
+    /// PhotosPickerItem -> UIImageに変換したアイテムを格納するプロパティ
+    @State var selectedImage: UIImage?
+
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+
+        PhotosPicker(selection: $selectedItem) {
+            Text("フォトピッカーを表示")
+        }
+        // PhotosPickerItem -> Data -> UIImageに変換
+        .onChange(of: selectedItem) { item in
+
+            Task {
+                do {
+                    guard let data = try await item?.loadTransferable(type: Data.self) else { return }
+                    guard let uiImage = UIImage(data: data) else { return }
+                    selectedImage = uiImage
+                } catch {
+
+                }
+            }
+        }
     }
 }
 
