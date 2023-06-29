@@ -6,10 +6,31 @@
 //
 
 import SwiftUI
+import PhotosUI
 
 struct GetMultipleUIImage: View {
+    /// フォトピッカー内で選択した複数のアイテムが保持されるプロパティ
+    @State var selectedItems: [PhotosPickerItem] = []
+    /// PhotosPickerItem -> UIImageに変換した複数のアイテムを格納するプロパティ
+    @State var selectedImages: [UIImage] = []
+
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+
+        PhotosPicker(selection: $selectedItems) {
+            Text("フォトピッカーを表示")
+        }
+        .onChange(of: selectedItems) { items in
+
+            Task {
+                selectedImages = []
+
+                for item in items {
+                    guard let data = try await item.loadTransferable(type: Data.self) else { continue }
+                    guard let uiImage = UIImage(data: data) else { continue }
+                    selectedImages.append(uiImage)
+                }
+            }
+        }
     }
 }
 
