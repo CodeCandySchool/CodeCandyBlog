@@ -4,6 +4,7 @@
 //
 //  Created by Kensuke Nakagawa on 2023/07/10.
 //
+// ImageRendererを用いた具体的なビューの画像取得実装例
 
 import SwiftUI
 
