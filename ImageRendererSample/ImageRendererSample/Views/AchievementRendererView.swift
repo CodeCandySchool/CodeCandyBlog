@@ -60,7 +60,7 @@ struct AchievementRendererView: View {
         .frame(width: 200, height: 290)
     }
 
-    
+
 
 
 }
