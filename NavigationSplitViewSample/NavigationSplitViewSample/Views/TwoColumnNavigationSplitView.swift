@@ -10,7 +10,7 @@
 
 import SwiftUI
 
-/// 選択可能なサイドバーによる詳細ビューの切り替え実装
+/// 選択可能なサイドバーによる詳細ビューの切り替え実装サンプル
 struct TwoColumnNavigationSplitView: View {
 
     let colors: [Color] = [.orange, .pink, .blue]
