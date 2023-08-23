@@ -16,6 +16,7 @@
 		BE6775402A932CB4004A9A49 /* BasicAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE67753F2A932CB4004A9A49 /* BasicAlert.swift */; };
 		BE6775422A933636004A9A49 /* CustomizeActionButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE6775412A933636004A9A49 /* CustomizeActionButtons.swift */; };
 		BE6775442A945750004A9A49 /* AlertPositioningNotes.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE6775432A945750004A9A49 /* AlertPositioningNotes.swift */; };
+		BE6775462A95AF93004A9A49 /* AddTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE6775452A95AF93004A9A49 /* AddTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		BE67753F2A932CB4004A9A49 /* BasicAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicAlert.swift; sourceTree = "<group>"; };
 		BE6775412A933636004A9A49 /* CustomizeActionButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomizeActionButtons.swift; sourceTree = "<group>"; };
 		BE6775432A945750004A9A49 /* AlertPositioningNotes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertPositioningNotes.swift; sourceTree = "<group>"; };
+		BE6775452A95AF93004A9A49 /* AddTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +88,7 @@
 				BE6775412A933636004A9A49 /* CustomizeActionButtons.swift */,
 				BE67753B2A930D88004A9A49 /* CustomDetailsAlert.swift */,
 				BE6775432A945750004A9A49 /* AlertPositioningNotes.swift */,
+				BE6775452A95AF93004A9A49 /* AddTextField.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -167,6 +170,7 @@
 				BE6775402A932CB4004A9A49 /* BasicAlert.swift in Sources */,
 				BE67753C2A930D88004A9A49 /* CustomDetailsAlert.swift in Sources */,
 				BE67752D2A930D68004A9A49 /* AlertSampleApp.swift in Sources */,
+				BE6775462A95AF93004A9A49 /* AddTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -303,6 +307,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -332,6 +337,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
