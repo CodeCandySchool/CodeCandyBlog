@@ -51,12 +51,3 @@ struct SaveButton: View {
         didError.toggle()
     }
 }
-
-
-
-
-struct AddDetailsAlert_Previews: PreviewProvider {
-    static var previews: some View {
-        AddDetailsAlert()
-    }
-}
