@@ -10,14 +10,14 @@ import SwiftUI
 /// 複数ボタンの配置
 struct MultipleAlertButtons: View {
 
-    @State private var didError = false
+    @State private var isShowAlert = false
 
     var body: some View {
 
-        Button("アラートを表示する") { didError = true }
+        Button("アラートを表示する") { isShowAlert.toggle() }
 
         // 複数のアクションボタンを配置可能
-        .alert("Error", isPresented: $didError) {
+        .alert("Error", isPresented: $isShowAlert) {
             Button("戻る") {}
             Button("やり直す") {}
 
@@ -27,7 +27,7 @@ struct MultipleAlertButtons: View {
         }
 
         // 3つ以降は、縦に並べられる
-        .alert("Error", isPresented: $didError) {
+        .alert("Error", isPresented: $isShowAlert) {
             Button("ボタン1") {}
             Button("ボタン2") {}
             Button("ボタン3") {}
@@ -44,30 +44,27 @@ struct MultipleAlertButtons: View {
 /// ユーザーにわかりやすく伝えるための外観が提供される。
 struct SelectButtonRoles: View {
 
-    @State private var showAlert = false
+    @State private var isShowAlert = false
 
     var body: some View {
 
-        Button("アラートを表示する") { showAlert = true }
-        .alert("確認", isPresented: $showAlert) {
 
-            Button("戻る", role: .cancel) {
-                // キャンセル処理...
-            }
 
-            Button("削除する", role: .destructive) {
-                // 削除処理...
-            }
+        Button("アラートを表示する") { isShowAlert.toggle() }
+
+        /// ボタンのロール（役割）の設定
+        .alert("確認", isPresented: $isShowAlert) {
+
+            Button("戻る", role: .cancel) {}
+            Button("削除する", role: .destructive) {}
 
         } message: {
             // アラートのメッセージ...
             Text("データ削除を実行しますか？")
         }
-    }
-}
 
-struct MultipleButtons_Previews: PreviewProvider {
-    static var previews: some View {
-        SelectButtonRoles()
+
+
+
     }
 }

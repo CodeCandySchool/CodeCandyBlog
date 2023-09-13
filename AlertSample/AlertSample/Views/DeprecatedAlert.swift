@@ -14,27 +14,17 @@ import SwiftUI
 /// View構造体「Alert」を使った実装は非推薦となった。
 struct DeprecatedAlert: View {
 
-    @State private var showAlert = false
+    @State private var isShowAlert = false
 
     var body: some View {
         Button("アラートを表示") {
-            showAlert = true
+            isShowAlert.toggle()
         }
-        .alert(isPresented: $showAlert) {
+        .alert(isPresented: $isShowAlert) {
             Alert(
                 title: Text("Error"),
                 message: Text("エラーが発生しました。")
             )
         }
-    }
-}
-
-
-
-
-
-struct DeprecatedAlert_Previews: PreviewProvider {
-    static var previews: some View {
-        DeprecatedAlert()
     }
 }

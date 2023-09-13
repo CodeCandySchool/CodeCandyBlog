@@ -11,7 +11,7 @@ import SwiftUI
 struct BasicPicker: View {
 
     // 現在の選択アイテムを保持
-    @State private var selectionColor: Color = .red
+    @State private var selectionColor: Color = .blue
 
     var body: some View {
 

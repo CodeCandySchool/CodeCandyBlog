@@ -17,7 +17,7 @@ struct SaveDetails: Identifiable {
 /// 何らかのデータを保存するカスタムボタン。
 struct SaveButton: View {
 
-    @State private var didError = false
+    @State private var isShowAlert: Bool = false
     @State private var details: SaveDetails?
     let alertTitle: String = "Save failed."
 
@@ -25,7 +25,7 @@ struct SaveButton: View {
         Button("データを保存する") { save() }
             .alert(
                 alertTitle,
-                isPresented: $didError,
+                isPresented: $isShowAlert,
                 presenting: details // ⬅︎ ソースを渡す
             ) { details in
                 Button("\(details.name)を削除", role: .destructive) {
@@ -39,7 +39,7 @@ struct SaveButton: View {
                 Text(details.error)
             }
     }
-
+    /// 何らかのデータを保存するメソッドサンプル
     func save() {
         // データ保存処理
         //...
@@ -48,6 +48,6 @@ struct SaveButton: View {
         // データ保存失敗時
         details = SaveDetails(name: "データ１",
                               error: "データの保存に失敗しました。")
-        didError.toggle()
+        isShowAlert.toggle()
     }
 }
