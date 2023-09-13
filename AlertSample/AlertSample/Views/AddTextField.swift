@@ -16,13 +16,7 @@ struct AddTextField: View {
 
     var body: some View {
         Button("アラートを表示する") { isShowAlert.toggle() }
-
-
-
-
-
-
-
+        
         .alert("LogIn", isPresented: $isShowAlert) {
 
             TextField("メールアドレス", text: $address)
@@ -39,13 +33,6 @@ struct AddTextField: View {
             // アラートのメッセージ...
             Text("必要な情報を入力してください")
         }
-
-
-
-
-
-
-
     }
 }
 

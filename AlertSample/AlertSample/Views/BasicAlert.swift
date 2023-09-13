@@ -5,10 +5,6 @@
 //  Created by Kensuke Nakagawa on 2023/08/21.
 //
 
-
-
-
-
 import SwiftUI
 
 /// iOS15+から使用できるインスタンスメソッドalertによるシンプルなアラート実装

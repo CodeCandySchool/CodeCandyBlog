@@ -48,8 +48,6 @@ struct SelectButtonRoles: View {
 
     var body: some View {
 
-
-
         Button("アラートを表示する") { isShowAlert.toggle() }
 
         /// ボタンのロール（役割）の設定
@@ -62,9 +60,5 @@ struct SelectButtonRoles: View {
             // アラートのメッセージ...
             Text("データ削除を実行しますか？")
         }
-
-
-
-
     }
 }

@@ -5,10 +5,6 @@
 //  Created by Kensuke Nakagawa on 2023/08/21.
 //
 
-
-
-
-
 import SwiftUI
 
 /// View構造体「Alert」を使った実装は非推薦となった。

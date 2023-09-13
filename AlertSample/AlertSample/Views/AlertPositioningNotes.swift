@@ -7,7 +7,6 @@
 
 import SwiftUI
 
-
 /// 定義場所は、自身を表示するBoolプロパティを持つファイル内のどこでもOK
 /// 条件分岐によるビューの出し分けを行っている場合は、判定false内のalertは作動しないことに注意
 struct AlertPositioningNotes: View {
@@ -63,11 +62,5 @@ struct AlertPositioningNotes: View {
         } message: {
             Text("エラーが発生しました")
         }
-    }
-}
-
-struct AlertPositioningNotes_Previews: PreviewProvider {
-    static var previews: some View {
-        AlertPositioningNotes()
     }
 }
