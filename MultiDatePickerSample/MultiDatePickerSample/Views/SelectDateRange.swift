@@ -32,7 +32,7 @@ struct SelectDateRange: View {
 
     var body: some View {
 
-        // 引数「in:」に日付指定設定を渡す
+        // 引数「in:」に日付の範囲を指定する
         MultiDatePicker("複数の日付選択", selection: $dates, in: bounds)
     }
 }

@@ -14,7 +14,7 @@ struct SelectDatePast: View {
     @Environment(\.calendar) var calendar
     @Environment(\.timeZone) var timeZone
 
-    // 選択可能日付設定を作成
+    // 選択可能な日付の範囲を作成
     var bounds: PartialRangeUpTo<Date> {
         let end = calendar.date(from: DateComponents(
             timeZone: timeZone,
@@ -29,7 +29,7 @@ struct SelectDatePast: View {
 
     var body: some View {
 
-        // 引数「in:」に日付指定設定を渡す
+        // 引数「in:」に日付の範囲を指定する
         MultiDatePicker("複数の日付選択", selection: $dates, in: bounds)
     }
 }
